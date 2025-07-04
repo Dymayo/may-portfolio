@@ -69,4 +69,23 @@ const expCards = [
   },
 ];
 
-export { words, abilities, expCards };
+const socialImgs = [
+  {
+    name: "insta",
+    imgPath: "/images/insta.png",
+  },
+  {
+    name: "fb",
+    imgPath: "/images/fb.png",
+  },
+  {
+    name: "x",
+    imgPath: "/images/x.png",
+  },
+  {
+    name: "linkedin",
+    imgPath: "/images/linkedin.png",
+  },
+];
+
+export { words, abilities, expCards, socialImgs };

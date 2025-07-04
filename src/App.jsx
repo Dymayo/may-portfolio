@@ -7,6 +7,8 @@ import Projects from "./sections/Projects";
 import FeatureCards from "./sections/FeatureCards";
 import EperienceSection from "./sections/EperienceSection";
 import Experience from "./sections/EperienceSection";
+import Contact from "./sections/contact";
+import Footer from "./sections/Footer";
 
 const App = () => {
   return (
@@ -27,6 +29,8 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
+      <Contact />
+      <Footer />
     </Router>
   );
 };
