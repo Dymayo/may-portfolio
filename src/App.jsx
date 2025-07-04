@@ -7,7 +7,7 @@ import Projects from "./sections/Projects";
 import FeatureCards from "./sections/FeatureCards";
 import EperienceSection from "./sections/EperienceSection";
 import Experience from "./sections/EperienceSection";
-import Contact from "./sections/contact";
+import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 
 const App = () => {
