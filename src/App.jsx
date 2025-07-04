@@ -7,7 +7,6 @@ import Projects from "./sections/Projects";
 import FeatureCards from "./sections/FeatureCards";
 import EperienceSection from "./sections/EperienceSection";
 import Experience from "./sections/EperienceSection";
-import Contact from "./sections/ContactSection";
 import Footer from "./sections/Footer";
 
 const App = () => {
@@ -29,7 +28,6 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
-      <Contact />
       <Footer />
     </Router>
   );
