@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import TitleHeader from "../components/TitleHeader";
-// import ContactExperience from "../components/models/contact/ContactExperience";
+import ContactExperienceSuper from "../components/models/hero_models/ContactExperienceSuper";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -108,8 +108,8 @@ const Contact = () => {
             </div>
           </div>
           <div className="xl:col-span-7 min-h-96">
-            <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-              {/* <ContactExperience /> */}
+            <div className="bg-[#bc8fff] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
+              <ContactExperienceSuper />
             </div>
           </div>
         </div>

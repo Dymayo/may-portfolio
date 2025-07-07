@@ -48,7 +48,7 @@ section {
   }
 
   .section-padding {
-    @apply px-5 md:px-10 md:mt-40 mt-20;
+    @apply px-5 md:px-10 md:mt-5 mt-10;
   }
 
   .mt-responsive {
@@ -95,7 +95,7 @@ section {
   }
 
   .hero-badge {
-    @apply bg-black-200 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
+    @apply bg-[#333A7D] py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
   }
 
   .hero-3d-layout {
@@ -231,7 +231,7 @@ section {
   }
 
   .card-border {
-    @apply border border-black-50 bg-black-100;
+    @apply border border-[#7265CB] bg-[#C4BEED];
   }
 
   .marquee-item {
@@ -239,19 +239,19 @@ section {
   }
 
   .timeline-wrapper {
-    @apply absolute top-0 xl:left-[35.5vw] md:left-10 left-5 h-full flex justify-center;
+    @apply absolute top-0 xl:left-[18vw] md:left-10 left-5 h-full flex justify-center;
   }
 
   .timeline {
-    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-black;
+    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-[#f0eeff];
   }
 
   .timeline-logo {
-    @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-black-50 bg-black-100;
+    @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-[#B4AAFF] bg-[#CAC3FE];
   }
 
   .exp-card-wrapper {
-    @apply flex flex-col-reverse xl:flex-row xl:gap-20 gap-10 justify-between;
+    @apply w-full xl:w-4/6 flex flex-col xl:flex-row xl:gap-20 gap-10 justify-center items-center mx-auto;
   }
 
   .gradient-edge {
@@ -280,12 +280,12 @@ section {
 
   form {
     label {
-      @apply block text-white-50 mb-2;
+      @apply block text-black mb-2;
     }
 
     input,
     textarea {
-      @apply w-full px-4 py-4 md:text-base text-sm placeholder:text-blue-50 bg-blue-100 rounded-md;
+      @apply w-full px-4 py-4 md:text-base text-sm placeholder:text-blue-50 bg-[#F0EEFF] rounded-md;
     }
 
     a {

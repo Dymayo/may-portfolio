@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { gsap } from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -57,11 +58,8 @@ const ShowcaseSection = () => {
               <img src="/images/project1.png" alt="Marhabteen" />
             </div>
             <div className="text-content">
-              <h2>
-                Home Rentals Made Family-Friendly with a User-Centered App
-                called Marhabteen
-              </h2>
-              <p className="text-white-50 md:text-xl">
+              <h2>Marhabteen – Rental App Design System</h2>
+              <p className="text-[#333a7d] md:text-xl">
                 A user-centered app powered by a clean, scalable design system
                 built from scratch.
               </p>
@@ -73,16 +71,23 @@ const ShowcaseSection = () => {
               <div className="image-wrapper bg-[#ffefdb]">
                 <img src="/images/project2.png" alt="Replicaide" />
               </div>
-              <h2>Library Management Platform</h2>
+              <h2>Replicaide – AI Startup</h2>
             </div>
             <div className="project" ref={project3Ref}>
               <div className="image-wrapper bg-[#ffefdb]">
                 <img src="/images/project3.png" alt="CV-Builder" />
               </div>
-              <h2>YC Directory - A Startup project</h2>
+              <h2>May’s Portfolio </h2>
             </div>
-            <button>see More</button>
           </div>
+        </div>
+        <div className="flex justify-center">
+          <Link
+            to="/projects"
+            className="xl:mt-2 mt-6 px-6 py-3 bg-[#7600BB] text-white font-medium rounded-lg shadow hover:bg-indigo-700 transition"
+          >
+            See More
+          </Link>
         </div>
       </div>
     </section>
