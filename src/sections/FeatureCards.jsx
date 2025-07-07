@@ -13,7 +13,7 @@ const FeatureCards = () => {
               spotlightColor="rgb(148 136 255)"
             >
               <div className="size-14 flex items-center justify-center rounded-full">
-                <img src={imgPath} alt={title} />
+                <img className="w-full h-full" src={imgPath} alt={title} />
               </div>
               <h3 className="text-black text-2xl font-semibold mt-2">
                 {title}

@@ -11,17 +11,17 @@ const words = [
 
 const abilities = [
   {
-    imgPath: "/images/ui-ux.png",
+    imgPath: "/images/ui-ux.svg",
     title: "UI/UX Design",
     desc: "Crafting intuitive and beautiful user interfaces that delight users and drive engagement.",
   },
   {
-    imgPath: "/images/frontend.png",
+    imgPath: "/images/dev.svg",
     title: "Frontend Development",
     desc: "Building responsive, accessible, and performant web applications using modern frameworks and best practices.",
   },
   {
-    imgPath: "/images/backend.png",
+    imgPath: "/images/video.svg",
     title: "Interaction & Motion Design",
     desc: "Creating fluid interactions and engaging animations that bring your interfaces to life.",
   },
