@@ -1,13 +1,33 @@
 import React from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { abilities } from "../constants";
 import SpotlightCard from "../components/SpotlightCard";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const FeatureCards = () => {
+  useGSAP(() => {
+    gsap.utils.toArray(".feature-card").forEach((card) => {
+      gsap.from(card, {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 80%",
+        },
+      });
+    });
+  }, []);
+
   return (
     <div className="w-full padding-x-lg">
       <div className="mx-auto grid-3-cols">
         {abilities.map(({ imgPath, title, desc }) => (
-          <div key={title}>
+          <div key={title} className="feature-card">
             <SpotlightCard
               className="rounded-xl p-8 flex flex-col gap-4 h-full "
               spotlightColor="rgb(148 136 255)"
