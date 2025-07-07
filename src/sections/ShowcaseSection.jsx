@@ -69,13 +69,13 @@ const ShowcaseSection = () => {
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={project2Ref}>
               <div className="image-wrapper bg-[#ffefdb]">
-                <img src="/images/project2.png" alt="Replicaide" />
+                <img src="/images/Replicaide.png" alt="Replicaide" />
               </div>
               <h2>Replicaide – AI Startup</h2>
             </div>
             <div className="project" ref={project3Ref}>
               <div className="image-wrapper bg-[#ffefdb]">
-                <img src="/images/project3.png" alt="CV-Builder" />
+                <img src="/images/portfolio.png" alt="CV-Builder" />
               </div>
               <h2>May’s Portfolio </h2>
             </div>
