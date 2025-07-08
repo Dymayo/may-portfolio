@@ -3,6 +3,7 @@ import { gsap } from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
+import MoreButton from "../components/LearnMoreButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -82,11 +83,8 @@ const ShowcaseSection = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <Link
-            to="/projects"
-            className="xl:mt-2 mt-6 px-6 py-3 bg-[#7600BB] text-white font-medium rounded-lg shadow hover:bg-indigo-700 transition"
-          >
-            See More
+          <Link to="/projects">
+            <MoreButton />
           </Link>
         </div>
       </div>
