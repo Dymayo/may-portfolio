@@ -53,30 +53,35 @@ const NavBar = () => {
           </div>
         </a>
       </div>
-      <nav className={`mobile-menu ${menuOpen ? "open" : ""}`}>
-        <ul>
-          <li className="group">
-            <Link to="/" onClick={() => setMenuOpen(false)}>
-              <span>Home</span> <span className="underline" />
-            </Link>
-          </li>
-          <li className="group">
-            <Link to="/about" onClick={() => setMenuOpen(false)}>
-              <span>About</span> <span className="underline" />
-            </Link>
-          </li>
-          <li className="group">
-            <Link to="/projects" onClick={() => setMenuOpen(false)}>
-              <span>Projects</span> <span className="underline" />
-            </Link>
-          </li>
-          <li>
-            <a href="#contact" onClick={() => setMenuOpen(false)}>
-              Contact me
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div
+        className={`mobile-overlay ${menuOpen ? "show" : ""}`}
+        onClick={() => setMenuOpen(false)}
+      >
+        <nav className="mobile-drawer" onClick={(e) => e.stopPropagation()}>
+          <ul>
+            <li className="group">
+              <Link to="/" onClick={() => setMenuOpen(false)}>
+                <span>Home</span> <span className="underline" />
+              </Link>
+            </li>
+            <li className="group">
+              <Link to="/about" onClick={() => setMenuOpen(false)}>
+                <span>About</span> <span className="underline" />
+              </Link>
+            </li>
+            <li className="group">
+              <Link to="/projects" onClick={() => setMenuOpen(false)}>
+                <span>Projects</span> <span className="underline" />
+              </Link>
+            </li>
+            <li>
+              <a href="#contact" onClick={() => setMenuOpen(false)}>
+                Contact me
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };

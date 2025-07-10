@@ -147,40 +147,73 @@ section {
         @apply size-6;
       }
     }
+  }
 
-    nav.mobile-menu {
-      @apply fixed inset-0 bg-[#f0eeff] flex-col items-center justify-center gap-8 lg:hidden hidden;
+  /* Mobile drawer styles */
+  .mobile-overlay {
+    @apply fixed top-0 right-0 bottom-0 left-0 h-screen w-screen z-[99] flex justify-end transition-transform duration-300;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateX(100%);
+  }
 
-      &.open {
-        @apply flex;
-      }
+  .mobile-overlay.show {
+    transform: translateX(0%);
+  }
 
-      ul {
-        @apply flex flex-col items-center gap-8 text-xl;
+  .mobile-drawer {
+    @apply h-full w-3/4 sm:w-1/2 bg-[#f0eeff] flex flex-col items-center justify-center gap-8 p-10;
+  }
 
-        li {
-          @apply text-[#333a7d] relative;
+  .mobile-drawer ul {
+    @apply flex flex-col items-center gap-8 text-xl;
+  }
 
-          span {
-            @apply transition-colors duration-300 hover:text-white-50;
-          }
+  .mobile-drawer li {
+    @apply text-[#333a7d] relative;
+  }
 
-          .underline {
-            @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-white-50 transition-all duration-300 group-hover:w-full;
-          }
+  .mobile-drawer li span {
+    @apply transition-colors duration-300 hover:text-white-50;
+  }
+
+  .mobile-drawer li .underline {
+    @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-white-50 transition-all duration-300 group-hover:w-full;
+  }
+
+  /*
+  nav.mobile-menu {
+    @apply fixed inset-0 bg-[#f0eeff] flex-col items-center justify-center gap-8 lg:hidden hidden;
+
+    &.open {
+      @apply flex;
+    }
+
+    ul {
+      @apply flex flex-col items-center gap-8 text-xl;
+
+      li {
+        @apply text-[#333a7d] relative;
+
+        span {
+          @apply transition-colors duration-300 hover:text-white-50;
+        }
+
+        .underline {
+          @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-white-50 transition-all duration-300 group-hover:w-full;
         }
       }
     }
+  }
+  */
 
-    .contact-btn {
-      @apply flex;
+  .contact-btn {
+    @apply flex;
 
-      .inner {
-        @apply px-5 py-2 rounded-lg bg-white text-black group-hover:bg-black-50 transition-colors duration-300;
+    .inner {
+      @apply px-5 py-2 rounded-lg bg-white text-black group-hover:bg-black-50 transition-colors duration-300;
 
-        span {
-          @apply group-hover:text-white transition-colors duration-300;
-        }
+      span {
+        @apply group-hover:text-white transition-colors duration-300;
       }
     }
   }
