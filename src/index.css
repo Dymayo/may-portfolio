@@ -141,6 +141,37 @@ section {
       }
     }
 
+    .menu-toggle {
+      @apply lg:hidden block;
+      img {
+        @apply size-6;
+      }
+    }
+
+    nav.mobile-menu {
+      @apply fixed inset-0 bg-[#f0eeff] flex-col items-center justify-center gap-8 lg:hidden hidden;
+
+      &.open {
+        @apply flex;
+      }
+
+      ul {
+        @apply flex flex-col items-center gap-8 text-xl;
+
+        li {
+          @apply text-[#333a7d] relative;
+
+          span {
+            @apply transition-colors duration-300 hover:text-white-50;
+          }
+
+          .underline {
+            @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-white-50 transition-all duration-300 group-hover:w-full;
+          }
+        }
+      }
+    }
+
     .contact-btn {
       @apply flex;
 
