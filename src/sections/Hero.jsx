@@ -1,12 +1,17 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { lazy, Suspense } from "react";
 import { useMediaQuery } from "react-responsive";
 
 import Button from "../components/Button";
 import { words } from "../constants";
 
-import HeroEperienceSuper from "../components/models/hero_models/HeroEperienceSuper";
-import HeroExperienceSuperMobile from "../components/models/hero_models/HeroExperienceSuperMobile";
+const HeroEperienceSuper = lazy(() =>
+  import("../components/models/hero_models/HeroEperienceSuper")
+);
+const HeroExperienceSuperMobile = lazy(() =>
+  import("../components/models/hero_models/HeroExperienceSuperMobile")
+);
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -71,7 +76,9 @@ const Hero = () => {
         {/* RIGHT: 3D Model or Visual */}
         <figure className="mt-20 lg:mt-0">
           <div className="hero-3d-layout hover:cursor-grab">
-            {isMobile ? <HeroExperienceSuperMobile /> : <HeroEperienceSuper />}
+            <Suspense fallback={<div className="h-[400px]" />}>
+              {isMobile ? <HeroExperienceSuperMobile /> : <HeroEperienceSuper />}
+            </Suspense>
           </div>
         </figure>
       </div>
