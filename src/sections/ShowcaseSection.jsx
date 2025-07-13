@@ -94,11 +94,11 @@ const ShowcaseSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <Link to="/projects">
             <MoreButton />
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

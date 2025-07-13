@@ -27,7 +27,7 @@ const NavBar = () => {
             alt="menu"
           />
         </button>
-        <nav className="desktop">
+        {/* <nav className="desktop">
           <ul>
             <li className="group">
               <Link to="/">
@@ -45,7 +45,7 @@ const NavBar = () => {
               </Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
 
         <a href="#contact" className="contact-btn group hidden sm:flex">
           <div className="inner">
