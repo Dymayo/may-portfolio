@@ -108,7 +108,7 @@ section {
   }
 
   .hero-3d-layout {
-    @apply xl:w-[60%] w-full h-full min-h-[50vh] absolute xl:-top-20 md:top-55 top-24 xl:-right-40 right-0;
+    @apply xl:w-[60%] w-full h-full min-h-[90vh] absolute xl:-top-20 md:top-55 top-24 xl:-right-40 right-0;
   }
 
   .navbar {
