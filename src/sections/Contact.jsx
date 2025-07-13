@@ -1,10 +1,14 @@
-import { useRef, useState } from "react";
+import { useRef, useState, lazy, Suspense } from "react";
 import emailjs from "@emailjs/browser";
 import { useMediaQuery } from "react-responsive";
 
 import TitleHeader from "../components/TitleHeader";
-import ContactExperienceMobile from "../components/models/hero_models/ContactExperienceMobile";
-import ContactExperience from "../components/models/hero_models/ContactExperience";
+const ContactExperienceMobile = lazy(() =>
+  import("../components/models/hero_models/ContactExperienceMobile")
+);
+const ContactExperience = lazy(() =>
+  import("../components/models/hero_models/ContactExperience")
+);
 
 const Contact = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -113,7 +117,9 @@ const Contact = () => {
           </div>
           <div className="xl:col-span-7 min-h-96">
             <div className="bg-[#bc8fff] w-full h-[350px] sm:h-[450px] md:h-[600px] hover:cursor-grab rounded-3xl overflow-hidden">
-              {isMobile ? <ContactExperienceMobile /> : <ContactExperience />}
+              <Suspense fallback={<div className="h-full" />}>
+                {isMobile ? <ContactExperienceMobile /> : <ContactExperience />}
+              </Suspense>
             </div>
           </div>
         </div>
