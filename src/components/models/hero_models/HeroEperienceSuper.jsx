@@ -1,9 +1,7 @@
-import Spline from "@splinetool/react-spline/next";
+import Spline from "@splinetool/react-spline";
 
-export default function HeroExperienceSuper() {
+export default function App() {
   return (
-    <main>
-      <Spline scene="https://prod.spline.design/bRtiHHVQ7ssGrcUD/scene.splinecode" />
-    </main>
+    <Spline scene="https://prod.spline.design/bRtiHHVQ7ssGrcUD/scene.splinecode" />
   );
 }
