@@ -69,8 +69,8 @@ const Hero = () => {
         </header>
 
         {/* RIGHT: 3D Model or Visual */}
-        <figure>
-          <div className="hero-3d-layout">
+        <figure className="mt-20 lg:mt-0">
+          <div className="hero-3d-layout hover:cursor-grab">
             {isMobile ? <HeroExperienceSuperMobile /> : <HeroEperienceSuper />}
           </div>
         </figure>
