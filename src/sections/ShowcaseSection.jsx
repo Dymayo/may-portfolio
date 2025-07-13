@@ -56,6 +56,10 @@ const ShowcaseSection = () => {
           {/* Left */}
           <div className="first-project-wrapper" ref={project1Ref}>
             <div className="image-wrapper">
+              <div className="absolute bottom-4 left-4 flex gap-2 z-20">
+                <span className="stack-tag">Figma</span>
+                <span className="stack-tag">Design System</span>
+              </div>
               <img src="/images/project1.png" alt="Marhabteen" />
             </div>
             <div className="text-content">
@@ -69,14 +73,22 @@ const ShowcaseSection = () => {
           {/* Right */}
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={project2Ref}>
-              <div className="image-wrapper bg-[#ffefdb]">
-                <img src="/images/Replicaide.png" alt="Replicaide" />
+              <div className="image-wrapper bg-[#BC5016]">
+                <div className="absolute bottom-4 left-4 flex gap-2 z-20">
+                  <span className="stack-tag">Branding</span>
+                  <span className="stack-tag">Product Design</span>
+                </div>
+                <img src="/images/project2.png" alt="Replicaide" />
               </div>
               <h2>Replicaide – AI Startup</h2>
             </div>
             <div className="project" ref={project3Ref}>
-              <div className="image-wrapper bg-[#ffefdb]">
-                <img src="/images/portfolio.png" alt="CV-Builder" />
+              <div className="image-wrapper bg-[#7600BB]">
+                <div className="absolute bottom-4 left-4 flex gap-2 z-20">
+                  <span className="stack-tag">React</span>
+                  <span className="stack-tag">Three.js</span>
+                </div>
+                <img src="/images/project3.png" alt="Portfolio" />
               </div>
               <h2>May’s Portfolio </h2>
             </div>

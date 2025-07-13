@@ -225,6 +225,10 @@ section {
       @apply flex xl:flex-row flex-col gap-10 justify-between;
     }
 
+    .stack-tag {
+      @apply bg-white text-black text-xs px-3 py-1 rounded-full;
+    }
+
     .first-project-wrapper {
       @apply h-full flex flex-col justify-between xl:w-[60%];
 
@@ -295,7 +299,7 @@ section {
   }
 
   .card-border {
-    @apply border border-[#7265CB] bg-[#C4BEED];
+    @apply border border-[#7265CB] bg-[#dac1ff];
   }
 
   .marquee-item {
@@ -370,18 +374,6 @@ section {
 
     p {
       @apply text-center md:text-start;
-    }
-
-    .socials {
-      @apply flex items-center justify-center gap-5;
-
-      .icon {
-        @apply border border-black-50 bg-black-100 flex justify-center items-center rounded-xl size-10 md:size-12 cursor-pointer transition-all duration-500 hover:bg-black-50;
-      }
-
-      img {
-        @apply inline-block;
-      }
     }
   }
 }
