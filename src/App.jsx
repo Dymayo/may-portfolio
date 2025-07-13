@@ -5,10 +5,10 @@ import ShowcaseSection from "./sections/ShowcaseSection";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
 import FeatureCards from "./sections/FeatureCards";
-import EperienceSection from "./sections/EperienceSection";
-import Experience from "./sections/EperienceSection";
 import Footer from "./sections/Footer";
 import Contact from "./sections/Contact";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const App = () => {
   return (
@@ -31,6 +31,8 @@ const App = () => {
       </Routes>
       <Contact />
       <Footer />
+      <Analytics />
+      <SpeedInsights />
     </Router>
   );
 };
