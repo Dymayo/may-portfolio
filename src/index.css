@@ -47,6 +47,12 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  .hero-3d-layout canvas {
+    touch-action: pan-y;
+  }
+}
+
 @layer components {
   .padding-x {
     @apply px-5 md:px-10;
