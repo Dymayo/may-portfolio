@@ -74,13 +74,15 @@ const Hero = () => {
         </header>
 
         {/* RIGHT: 3D Model or Visual */}
-        <figure className="mt-20 lg:mt-0">
-          <div className="hero-3d-layout hover:cursor-grab">
-            <Suspense fallback={<div className="h-[400px]" />}>
-              {isMobile ? <HeroExperienceSuperMobile /> : <HeroEperienceSuper />}
-            </Suspense>
-          </div>
-        </figure>
+        {!isMobile && (
+          <figure className="mt-20 lg:mt-0">
+            <div className="hero-3d-layout hover:cursor-grab">
+              <Suspense fallback={<div className="h-[400px]" />}>
+                <HeroEperienceSuper />
+              </Suspense>
+            </div>
+          </figure>
+        )}
       </div>
     </section>
   );
