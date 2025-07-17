@@ -64,9 +64,9 @@ const NavBar = () => {
         className={`mobile-overlay ${menuOpen ? "show" : ""}`}
         onClick={() => setMenuOpen(false)}
       >
-        <nav className="mobile-drawer" onClick={(e) => e.stopPropagation()}>
+        {/* <nav className="mobile-drawer" onClick={(e) => e.stopPropagation()}>
           <ul>
-            {/* <li className="group">
+             <li className="group">
               <Link to="/" onClick={() => setMenuOpen(false)}>
                 <span>Home</span> <span className="underline" />
               </Link>
@@ -80,14 +80,14 @@ const NavBar = () => {
               <Link to="/projects" onClick={() => setMenuOpen(false)}>
                 <span>Projects</span> <span className="underline" />
               </Link>
-            </li> */}
+            </li> 
             <li>
               <a href="#contact" onClick={() => setMenuOpen(false)}>
                 Contact me
               </a>
             </li>
           </ul>
-        </nav>
+        </nav> */}
       </div>
     </header>
   );
